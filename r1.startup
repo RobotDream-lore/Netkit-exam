@@ -1,0 +1,6 @@
+/etc/init.d/networking start
+/etc/init.d/zebra start
+/etc/init.d/dhcp3-server start
+
+iptables -t nat -A POSTROUTING -o eth2 -j MASQUERADE
+
