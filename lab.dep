@@ -1,6 +1,9 @@
-pc1:r1
+ssmb:r1
+spriv:r1
+pc1:spriv
+pc2:spriv
 pc3:r1
-sweb1:r1
-sweb2:r1
+sweb1:ns
+sweb2:ns
 ns:r1
 pc5:r2

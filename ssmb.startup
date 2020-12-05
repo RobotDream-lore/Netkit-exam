@@ -1,0 +1,21 @@
+ip link set eth0 address 00:00:00:00:00:a3
+/etc/init.d/networking start
+/etc/init.d/ssh start
+
+useradd cooper
+useradd bt7274
+
+echo -ne "passwd\npasswd\n" | smbpasswd -s -a cooper
+echo -ne "passwd\npasswd\n" | smbpasswd -s -a bt7274
+
+mkdir /home/samba/
+mkdir /home/samba/cooper
+mkdir /home/samba/bt7274
+
+chown cooper:cooper /home/samba/cooper
+chmod 775 /home/samba/cooper
+
+chown bt7274:bt7274 /home/samba/bt7274
+chmod 775 /home/samba/bt7274
+
+/etc/init.d/samba start

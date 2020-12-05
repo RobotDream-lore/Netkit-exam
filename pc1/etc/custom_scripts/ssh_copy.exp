@@ -1,0 +1,11 @@
+#!/usr/bin/expect -f
+
+spawn ssh-copy-id -i /root/.ssh/id_rsa sysadmin@172.16.0.3
+expect "(yes/no)?"
+send -- "yes\r"
+expect "*'s password:"
+send -- "password\r"
+send -- "\r"
+
+expect eof
+

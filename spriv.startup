@@ -1,0 +1,6 @@
+ip link set eth0 address 00:00:00:00:00:a4
+echo -ne "password\npassword\n" | adduser -gecos "" sysadmin
+/etc/init.d/networking start
+/etc/init.d/ssh start
+
+
