@@ -3,4 +3,5 @@
 /etc/init.d/ssh start
 /etc/init.d/dhcp3-server start
 
-
+iptables -t nat -A POSTROUTING -s 172.16.0.0/24 -j MASQUERADE
+iptables -t nat -A POSTROUTING -s 172.16.1.0/24 -j MASQUERADE
