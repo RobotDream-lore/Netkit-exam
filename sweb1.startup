@@ -2,6 +2,5 @@ ip link set eth0 address 00:00:00:00:00:a1
 /etc/init.d/networking start
 /etc/init.d/ssh start
 a2dissite default
-a2ensite site1
-a2ensite site2
+a2ensite sites
 /etc/init.d/apache2 start

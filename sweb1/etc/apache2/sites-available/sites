@@ -1,0 +1,26 @@
+<VirtualHost *:80>
+ServerAdmin bt7274@localhost
+ServerName w3.titan.fall
+DocumentRoot /var/www/html/site1
+</VirtualHost>
+
+<VirtualHost *:80>
+ServerAdmin bt7274@localhost
+ServerName www.titan.fall
+DocumentRoot /var/www/html/site2
+</VirtualHost>
+
+<VirtualHost *:80>
+ServerAdmin bt7274@localhost
+ServerName folder.titan.fall
+DocumentRoot /var/www/html/folder
+ServerPath "/"
+Options -Indexes
+<Directory "/">
+Options FollowSymLinks MultiViews Indexes
+AllowOverride all
+Order allow,deny
+Allow from all
+</Directory>
+</VirtualHost>
+

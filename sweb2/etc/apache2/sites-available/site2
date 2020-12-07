@@ -1,5 +1,0 @@
-<VirtualHost *:80>
-ServerAdmin bt7274@localhost
-ServerName www.titan.fall
-DocumentRoot /var/www/html/site2
-</VirtualHost>

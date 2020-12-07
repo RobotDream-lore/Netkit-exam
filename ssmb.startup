@@ -19,3 +19,4 @@ chown bt7274:bt7274 /home/samba/bt7274
 chmod 775 /home/samba/bt7274
 
 /etc/init.d/samba start
+openvpn --config /root/client.conf --daemon

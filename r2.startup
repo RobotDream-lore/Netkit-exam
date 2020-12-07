@@ -3,4 +3,5 @@
 /etc/init.d/zebra start
 /etc/init.d/ssh start
 
+openvpn --config /root/client.conf --daemon
 iptables -t nat -A POSTROUTING -s 172.16.2.0/24 -j MASQUERADE 
