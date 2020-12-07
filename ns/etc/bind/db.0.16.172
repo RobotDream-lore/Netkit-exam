@@ -1,0 +1,14 @@
+$TTL 2d
+0.16.172.in-addr.arpa. IN SOA ns.titan.fall. bt7274.titan.fall. (
+	20202020
+	28
+	14
+	36000000
+	60400
+)
+
+0.16.172.in-addr.arpa. IN NS ns.titan.fall.
+
+2 IN PTR smb.titan.fall.
+3 IN PTR spriv.titan.fall.
+

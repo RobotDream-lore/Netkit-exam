@@ -7,3 +7,7 @@ zone "0.0.1.in-addr.arpa" {
 	type master;
 	file "/etc/bind/db.0.0.1";
 };
+zone "0.16.172.in-addr.arpa" {
+	type master;
+	file "/etc/bind/db.0.16.172";
+};

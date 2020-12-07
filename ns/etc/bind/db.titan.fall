@@ -12,6 +12,8 @@ titan.fall. IN SOA ns.titan.fall. bt7274.titan.fall. (
 ns IN A 1.0.0.2
 www IN A 1.0.0.3
  IN A 1.0.0.4
+spriv IN A 172.16.0.3
+smb IN A 172.16.0.2
 
 alias IN CNAME www
 folder IN CNAME www
