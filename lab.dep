@@ -3,7 +3,9 @@ spriv:r1
 pc1:spriv
 pc2:spriv
 pc3:r1
+pc4:pc3
 sweb1:ns
 sweb2:ns
 ns:r1
 pc5:r2
+pc6:pc5
