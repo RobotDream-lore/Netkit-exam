@@ -1,6 +1,6 @@
 /etc/init.d/networking start
+iptables-restore < /root/firewall.conf
 /etc/init.d/dhcp3-server start
-iptables-restore < /root/firewall2.conf
 /etc/init.d/zebra start
 /etc/init.d/ssh start
 

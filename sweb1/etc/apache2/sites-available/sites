@@ -20,7 +20,7 @@ Options -Indexes
 Options FollowSymLinks MultiViews Indexes
 AllowOverride all
 Order allow,deny
-Allow from all
+Allow from 172.16.0.0/255.255.255.0
 </Directory>
 </VirtualHost>
 
