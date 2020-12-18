@@ -1,6 +1,7 @@
 ip link set eth0 address 00:00:00:00:00:a1
 /etc/init.d/networking start
 /etc/init.d/ssh start
+echo -ne "password\npassword\n" | adduser -gecos "" sysadmin
 a2dissite default
 a2ensite sites
 /etc/init.d/apache2 start

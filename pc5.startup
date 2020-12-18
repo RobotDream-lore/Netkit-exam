@@ -1,1 +1,3 @@
 /etc/init.d/networking start
+openvpn --config /root/client.conf --daemon
+

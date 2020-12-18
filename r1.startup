@@ -1,7 +1,8 @@
 /etc/init.d/networking start
-iptables-restore < /root/firewall.conf
+iptables-restore < /root/fw_last.conf
 /etc/init.d/zebra start
 /etc/init.d/ssh start
 /etc/init.d/dhcp3-server start
 
 openvpn --config /root/server.conf --daemon
+echo -ne "password\npassword\n" | adduser -gecos "" sysadmin
